@@ -3,51 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Portfolio - Wapiya Sahratul Janah</title>
+    
     <link rel="stylesheet" href="https://cloudflare.com">
-
+    
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #f0f4f5; }
         
-        /* Modifikasi Warna Header agar lebih fresh */
-        header { 
-            background: linear-gradient(135deg, #1e3c72, #2a5298); 
-            color: white; 
-            text-align: center; 
-            padding: 30px; 
-        }
+        header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; text-align: center; padding: 30px; }
         
-        /* Navigasi */
         nav { text-align: center; background: #34495e; padding: 12px; position: sticky; top: 0; z-index: 1000; }
         nav a { color: #ecf0f1; margin: 0 20px; text-decoration: none; font-weight: bold; transition: 0.3s; }
         nav a:hover { color: #f1c40f; }
 
         .container { padding: 25px; max-width: 900px; margin: auto; }
 
-        /* Profile Section */
         .profile { text-align: center; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .profile img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #2a5298; object-fit: cover; }
         
-        /* Content Sections */
         .section { margin-top: 25px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         h3 { color: #2c3e50; border-bottom: 2px solid #3498db; display: inline-block; padding-bottom: 5px; }
         
-        /* Skill Images agar tidak terlalu besar */
         .skill-list img { width: 100px; border-radius: 8px; margin: 10px 0; display: block; }
         
-        /* Gallery Horizontal */
         .portfolio { display: flex; gap: 15px; overflow-x: auto; padding: 10px 0; }
         .portfolio img { width: 220px; height: 140px; border-radius: 10px; object-fit: cover; border: 1px solid #ddd; }
 
         footer { text-align: center; background: #1a1a1a; color: #bdc3c7; padding: 15px; margin-top: 30px; font-size: 0.9em; }
 
-        .fa-instagram {
-    font-size: 1.2rem;
-    vertical-align: middle;
-    margin-right: 8px;
-    background: -webkit-linear-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
-
+    
+        .fa-instagram { 
+            font-size: 1.2rem; 
+            vertical-align: middle; 
+            margin-right: 8px; 
+            background: -webkit-linear-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+        
+    
+        .fa-envelope { color: #3498db; margin-right: 8px; }
+        .fa-linkedin { color: #0077b5; margin-right: 8px; }
+        
+        .contact-link { text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .contact-link:hover { opacity: 0.7; }
     </style>
 </head>
 <body>
@@ -65,15 +63,14 @@
 </nav>
 
 <div class="container">
-    <!-- Profile -->
     <div id="profile" class="profile">
         <img src="foto profil.jpeg" alt="Foto Profil">
         <h2>Wapiya Sahratul Janah</h2>
         <p><strong>Content Creator | Web Enthusiast</strong></p>
-        <p>Proses seseorang yang hobi merangkai kata dan mengedit visual untuk menciptakan karya digital yang bermakna.</p>
+        <p>Proses seseorang yang hobi merangkai kata dan mengedit visual 
+            untuk menciptakan karya digital yang bermakna.</p>
     </div>
 
-    <!-- Skills -->
     <div id="skills" class="section">
         <h3>Keahlian Utama</h3>
         <ul class="skill-list">
@@ -88,7 +85,6 @@
         </ul>
     </div>
 
-    <!-- Projects -->
     <div class="section">
         <h3>Project Terkini</h3>
         <ul>
@@ -98,7 +94,6 @@
         </ul>
     </div>
 
-    <!-- Gallery -->
     <div id="gallery" class="section">
         <h3>Gallery Karya</h3>
         <div class="portfolio">
@@ -108,22 +103,23 @@
         </div>
     </div>
 
-    <!-- Contact -->
     <div id="contact" class="section">
         <h3>Mari Berkolaborasi</h3>
-        <p>📧 Email:</p>
+        
+        <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:wapiyasahratuljanah44@gmail.com" class="contact-link" style="color: #333;">wapiyasahratuljanah44@gmail.com</a></p>
+        
         <p> 
-         <a href="https://instagram.com" target="_blank" style="text-decoration: none; color: #E1306C; font-weight: bold;"> 
-         <i class="fab fa-instagram"></i> @wapiyaaa__ 
-         </a> 
-         </p>
-        <p>💼 LinkedIn: ://linkedin.com</p>
+            <a href="https://instagram.com" target="_blank" class="contact-link" style="color: #E1306C;"> 
+                <i class="fa-brands fa-instagram"></i> @wapiyaaa__ 
+            </a> 
+        </p>
+        
+        <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com" target="_blank" class="contact-link" style="color: #0077b5;">Wapiya Sahratul Janah</a></p>
     </div>
 </div>
 
 <footer>
     <p>&copy; 2026 Wapiya Sahratul Janah Portfolio | Dibuat dengan ❤️</p>
-
 </footer>
 
 </body>
